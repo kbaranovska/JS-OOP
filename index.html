@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HomeWork</title>
+	<script src="Auto.js"></script>
+	<script src="Cabriolet.js"></script>  
+</head>
+<body>
+<script>
+let autoObject = auto(225);
+console.log( "Regular car:" );
+console.log( autoObject.setSpeed(0) );
+console.log( autoObject.getSpeed() );
+console.log( autoObject.getMaxSpeed() );
+console.log( autoObject.displayLicenseCategory() );
+console.log( autoObject.getRequiredInsuranceInfo() );
+console.log( "Engine is on: " + autoObject.isEngineOn() );
+
+console.log( "--------------------------" );
+
+console.log( "Cabriolet:" );
+let cabrioletObject = cabriolet(300);
+ console.log( cabrioletObject.setSpeed(200) );
+ console.log( cabrioletObject.getSpeed() );
+ console.log( cabrioletObject.getMaxSpeed() );
+ console.log( cabrioletObject.raiseRoof() );
+ console.log( cabrioletObject.collapseRoof() );
+ console.log( "Engine is on: " +  cabrioletObject.isEngineOn() );
+</script>
+</body>
+</html>
